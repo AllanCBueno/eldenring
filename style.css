@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    top: 20px;
+    left: 30px;
+}
+
+header img {
+    width: 100px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: MedievalSharp;
+    letter-spacing: 3px;
+}
+
+header a:hover {
+    color: goldenrod;
+    font-size: 28px;
+    font-weight: 700;
+    transition: 0.5s color ease-in-out;
+}
+
+body {
+    height: 100vh;
+}
+
+
+
+.cxvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+video {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.mascara {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 10%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99)90%);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.cxmae {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.textBox {
+    width: 40%;
+
+}
+
+.logo-nome {
+    width: 500px;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.samurai {
+    height: 500px;
+}
+
+.confessor {
+    height: 460px;
+    margin-left: -100px;
+}
+
+
+ul {
+    color: white;
+}
+
+ul li {
+    list-style: none;
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+table {
+    color: white;
+    padding: 20px;
+
+}
+
+td {
+    text-align: center;
+}
+
+.imgclasses {
+    margin-top: 15%;
+    width: 70vw;
+    height: 70vh;
+}
+
+.imgclasses img {
+    padding-left: 30px;
+}
+
+.imgclasses img:hover {
+    border: 4px solid rgb(100, 85, 2);
+}
+
+h3 {
+    color: white;
+}
+
+.recomendados {
+    font-size: 24px;
+}
+
+.minimo {
+    font-size: 24px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.req {
+    font-size: 40px;
+    position: fixed;
+    top: 25%
+}
+
+button {
+    font-size: 24px;
+    border-style: none;
+    background: white;
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(83, 63, 13);
+    color: white;
+}
+
+.texto-sobre {
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+}
+
+.texto-sobre p {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.logo-nome-req {
+    width: 500px;
+    margin-bottom: -50px;
+}
+
+
+@media(max-width:1100px) {
+    .textBox p {
+        display: none;
+    }
+
+    .cxmae {
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+}
+
+    .textBox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .imgperson {
+        justify-content: center;
+        position: relative;    
+    }
+
+    .samurai {
+        height: 300px;
+    }
+
+    .confessor {
+        height: 300px;
+        margin-left: 1px;
+    }
+
+    header {
+        position: inherit;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+
+    .minimo {
+        width: 80vw;
+        padding-top: 40px;
+    }
+
+    .recomendados{
+        width: 80vw;
+        padding-top: 40px;
+    }
+
+    .footer {
+        align-items: end;
+        position: relative;
+        margin-top: 70px;
+    }
+
+
+}
